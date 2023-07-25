@@ -30,4 +30,6 @@ node_modules/
 .env
 
 # Plugin
-build/
+build
+build/*
+
