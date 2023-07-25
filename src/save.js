@@ -22,10 +22,16 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save() {
+export default function save( { attributes } ) {
+	const { desktopHeight, mobileHeight } = attributes;
+	const styles = useBlockProps.save( {
+		style: {
+			'--desktop-height': `${ desktopHeight }px`,
+			'--mobile-height': `${ mobileHeight }px`,
+		},
+	} );
+
 	return (
-		<p { ...useBlockProps.save() }>
-			{ __( 'Spacerify – hello from the saved content!', 'spacerify' ) }
-		</p>
+		<div { ...styles } />
 	);
 }

@@ -5,6 +5,15 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-elpuasdigitalcrafts-spacerify {
+:root {
+	--desktop-height: 24px;
+	--mobile-height: 24px;
+}
 
+.wp-block-elpuasdigitalcrafts-spacerify {
+	height: var( --mobile-height );
+
+	@media screen and (min-width: 768px) {
+		height: var( --desktop-height );
+	}
 }

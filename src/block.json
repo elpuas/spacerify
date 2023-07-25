@@ -6,14 +6,15 @@
 	"title": "Spacerify",
 	"category": "design",
 	"icon": "editor-insertmore",
-	"description": "A responsive spacer block with values for desktop and mobile",
+	"description": "Spacerify: A responsive spacer block with customizable values for desktop and mobile layouts.",
 	"supports": {
 		"html": false,
 		"color": {
 			"text": false,
 			"gradients": true,
 			"background": true
-		}
+		},
+		"align": ["wide", "full"]
 	},
 	"attributes": {
 		"desktopHeight": {
@@ -23,14 +24,6 @@
 		"mobileHeight": {
 			"type": "number",
 			"default": "24"
-		},
-		"style": {
-			"type": "object",
-			"default": {
-				"color": {
-					"background": "#F6F6F6"
-				}
-			}
 		}
 	},
 	"textdomain": "spacerify",

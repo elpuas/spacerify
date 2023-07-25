@@ -80,7 +80,7 @@ export default function Edit({ attributes, setAttributes}) {
 					</PanelBody>
 				</Panel>
 			</InspectorControls>
-			<div { ...useBlockProps( styles ) }></div>
+			<div { ...useBlockProps( styles ) } />
 		</Fragment>
 	);
 }
