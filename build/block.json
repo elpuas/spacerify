@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "elpuasdigitalcrafts/spacerify",
+  "version": "0.1.0",
+  "title": "Spacerify",
+  "category": "design",
+  "icon": "editor-insertmore",
+  "description": "A responsive spacer block with values for desktop and mobile",
+  "supports": {
+    "html": false,
+    "color": {
+      "text": false,
+      "gradients": true,
+      "background": true
+    }
+  },
+  "attributes": {
+    "desktopHeight": {
+      "type": "number",
+      "default": "24"
+    },
+    "mobileHeight": {
+      "type": "number",
+      "default": "24"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#F6F6F6"
+        }
+      }
+    }
+  },
+  "textdomain": "spacerify",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

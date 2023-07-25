@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+:root {
+	--desktop-height: 24px;
+	--mobile-height: 24px;
+}
+
+.wp-block-elpuasdigitalcrafts-spacerify {
+	height: var( --mobile-height );
+
+	@media screen and (min-width: 768px) {
+		height: var( --desktop-height );
+	}
+}
+
+.spacerify-desktop-panel-row,
+.spacerify-mobile-panel-row {
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.spacerify-desktop-height,
+.spacerify-mobile-height {
+	> div {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 0 !important;
+
+		.components-text-control__input {
+			margin-left: 16px;
+			width: 75px;
+			flex-shrink: 0;
+		}
+	}
+}
